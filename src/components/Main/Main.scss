@@ -1,0 +1,78 @@
+main {
+    display: flex;
+    justify-content: center;
+
+    .main-content {
+        width: 90%;
+
+        .cards {
+            padding: 40px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 70px;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .container {
+        main {
+            .main-content {
+                .tools {
+                    .search-area {
+                        width: 310px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .container {
+        main {
+            .main-content {
+                .tools {
+                    .search-area {
+                        padding: 10px;
+                        width: 190px;
+                        white-space: inherit;
+
+                        i {
+                            margin-right: 8px;
+                        }
+
+                        form {
+                            height: 100%;
+
+                            input {
+
+                                &::placeholder {
+                                    &::before {
+                                        content: "salam";
+                                    }
+
+                                    font-size: 0.9rem;
+                                }
+
+                                &::-webkit-input-placeholder {
+                                    content: "Line 1\A Line 2\A Line 3\A";
+                                }
+
+                            }
+                        }
+                    }
+
+                    .region-filter {
+                        width: 130px;
+
+                        .current {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

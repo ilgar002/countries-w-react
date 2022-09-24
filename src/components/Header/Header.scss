@@ -1,0 +1,81 @@
+@import '../../sassStyles/variables';
+
+header {
+    height: 80px;
+    background-color: $clr-dark-blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    .header-content {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-title {
+            color: #fff;
+            transition: all 0.3s ease;
+            user-select: none;
+            font-weight: 500;
+        }
+
+        .theme-button {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            cursor: pointer;
+            user-select: none;
+            font-weight: 500;
+
+            .moon-icon {
+                color: #fff;
+                font-size: 1.5rem;
+                font-weight: bolder;
+                transition: all 0.3s ease;
+            }
+
+            .sun-icon {
+                color: $clr-very-dark-blue;
+                display: none;
+                transition: all 0.3s ease;
+                font-size: 1.5rem;
+            }
+
+            .current-theme {
+                font-size: 1.1rem;
+                color: #fff;
+                transition: all 0.3s ease;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media(max-width:576px) {
+    .container {
+        header {
+            .header-content {
+                .header-title {
+                    font-size: 1.3rem;
+                }
+
+                .theme-button {
+                    .current-theme {
+                        display: none;
+                    }
+
+                    .sun-icon {
+                        font-size: 1.5rem;
+                    }
+
+                    .moon-icon {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

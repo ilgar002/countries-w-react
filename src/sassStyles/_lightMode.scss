@@ -1,0 +1,181 @@
+.container {
+    &.light-mode {
+        background-color: $clr-very-light-gray;
+
+        header {
+            background-color: #fff;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            .header-title {
+                color: $clr-very-dark-blue;
+            }
+
+            .theme-button {
+                .moon-icon {
+                    display: none;
+                }
+
+                .sun-icon {
+                    display: block;
+                    color: $clr-very-dark-blue;
+                }
+
+                .current-theme {
+                    color: $clr-very-dark-blue;
+                }
+            }
+        }
+
+        main {
+            .main-content {
+                .tools {
+                    .search-area {
+                        background-color: #fff;
+
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        transition: all 0.3s ease;
+
+                        i {
+                            color: rgb(115, 113, 113);
+                            transition: all 0.3s ease;
+                        }
+
+                        form {
+                            input {
+                                color: rgb(115, 113, 113);
+                                transition: all 0.3s ease;
+
+                                &::placeholder {
+                                    color: rgb(124, 122, 122);
+                                    transition: all 0.3s ease;
+                                }
+                            }
+                        }
+                    }
+
+                    .region-filter {
+                        background-color: #fff;
+                        transition: all 0.3s ease;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                        .option {
+                            color: rgb(115, 113, 113);
+                            transition: all 0.3s ease;
+                        }
+
+                        .arrow-icon {
+                            color: rgb(115, 113, 113);
+                            transition: all 0.3s ease;
+                        }
+
+                        .options-dropdown {
+                            background-color: #fff;
+                            transition: all 0.3s ease;
+
+
+                            ul {
+                                li {
+                                    &:hover {
+                                        &::after {
+                                            background-color: rgb(115, 113, 113);
+                                            transition: all 0.3s ease;
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .cards {
+                    .skeleton-card {
+                        background-color: #fff;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+
+                        .image-skeleton {
+                            background-color: #b0b5b9;
+                        }
+
+                        .skeleton-text {
+                            .skeleton-name {
+                                background-color: #b0b5b9;
+                            }
+
+                            .skeleton-detail {
+                                div {
+                                    background-color: #b0b5b9;
+                                }
+
+                            }
+                        }
+                    }
+
+                    .card {
+                        background-color: #fff;
+
+                        .card-text {
+                            .country-name {
+                                color: $clr-very-dark-blue;
+                            }
+
+                            .country-detail {
+                                h6 {
+                                    color: $clr-very-dark-blue;
+
+                                    span {
+                                        color: $clr-dark-blue;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .error-message {
+                        color: $clr-very-dark-blue;
+                    }
+                }
+            }
+        }
+
+        .skeleton-details {
+            .img-container {
+                background-color: #b0b5b9;
+            }
+            .m-line {
+                background-color: #b0b5b9;
+            }
+            .s-line {
+                background-color: #b0b5b9;
+            }
+        }
+
+        .detailed {
+            color: $clr-very-dark-blue;
+
+            .back-btn {
+                background-color: #fff;
+                color: $clr-very-dark-blue;
+                box-shadow: rgb(36 36 36 / 20%) 0px 7px 29px 0px;
+            }
+
+            .muted {
+                color: #4f4c4c;
+            }
+
+            .detailed-data {
+                .info-container {
+                    .borders {
+                        .border-country {
+                            background-color: #f1f1f1;
+                            color: $clr-very-dark-blue;
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}

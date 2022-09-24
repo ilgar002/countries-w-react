@@ -1,0 +1,39 @@
+@import '../../../../sassStyles/variables';
+
+.search-area {
+    display: flex;
+    align-items: center;
+    background-color: $clr-dark-blue;
+    transition: all 0.3s ease;
+    width: 350px;
+    color: rgb(207, 206, 206);
+    padding: 12px;
+    border-radius: 5px;
+    user-select: none;
+
+    .search-icon {
+        margin-right: 12px;
+        font-size: 1.1rem;
+    }
+
+    form {
+        width: 100%;
+
+        input {
+            background-color: transparent;
+            transition: all 0.3s ease;
+            border: none;
+            height: 100%;
+            width: 100%;
+            outline: none;
+            color: rgb(207, 206, 206);
+            font-size: 1.1rem;
+
+            &::placeholder {
+                color: rgb(207, 206, 206);
+                transition: all 0.3s ease;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

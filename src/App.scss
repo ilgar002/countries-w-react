@@ -1,0 +1,7 @@
+@import './sassStyles/variables';
+
+.container {
+  background-color: $clr-very-dark-blue;
+  transition: all 0.3s ease;
+  min-height: 100vh;
+}

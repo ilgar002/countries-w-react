@@ -1,0 +1,53 @@
+@import '../../../sassStyles/variables';
+
+.card {
+    width: 270px;
+    height: 350px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 3%;
+    background-color: $clr-dark-blue;
+
+    .image-container {
+        height: 150px;
+
+        img {
+            width: 100%;
+            border-top-left-radius: 3%;
+            border-top-right-radius: 3%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .card-text {
+        padding: 20px 20px 30px 20px;
+        .country-name {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+        }
+        .country-detail {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h6 {
+                color: #fff;
+                font-weight: 500;
+                font-size: 1.1rem;
+                transition: all 0.3s ease;
+                span {
+                    color: rgb(207, 206, 206);
+                    font-size: 1rem;
+                    font-weight: 300;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+    }
+    &:hover {
+        transform: scale(1.05);
+    }
+}

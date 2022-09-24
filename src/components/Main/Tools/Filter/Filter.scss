@@ -1,0 +1,74 @@
+@import '../../../../sassStyles/variables';
+
+.region-filter {
+    background-color: $clr-dark-blue;
+    transition: all 0.3s ease;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    width: 185px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .option {
+        color: #fff;
+        transition: all 0.3s ease;
+        user-select: none;
+    }
+
+    .arrow-icon {
+        color: #fff;
+        transition: all 0.3s ease;
+        font-size: 1.3rem;
+    }
+
+    .options-dropdown {
+        position: absolute;
+        z-index: 100;
+        display: none;
+        left: 0;
+        top: 110%;
+        background-color: $clr-dark-blue;
+        transition: all 0.3s ease;
+        padding: 12px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+
+            li {
+                list-style-type: none;
+                position: relative;
+
+                &:hover {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: -5%;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        width: 5px;
+                        height: 5px;
+                        background-color: #fff;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+
+    &.opened {
+        .arrow-icon {
+            transform: rotate(180deg);
+        }
+        .options-dropdown{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,61 @@
+@import '../../../../sassStyles/variables';
+.skeleton-card {
+    width: 270px;
+    height: 350px;
+    background-color: $clr-dark-blue;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+    .image-skeleton {
+        height: 150px;
+        background-color: #747c83;
+        transition: all 0.3s ease;
+        border-top-left-radius: 3%;
+        border-top-right-radius: 3%;
+    }
+
+    .skeleton-text {
+        padding: 20px 20px 30px 20px;
+
+        .skeleton-name {
+            width: 150px;
+            height: 33px;
+            background-color: #747c83;
+            transition: all 0.3s ease;
+            border-radius: 4%;
+        }
+
+        .skeleton-detail {
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            div {
+                height: 24px;
+                background-color: #747c83;
+                transition: all 0.3s ease;
+                border-radius: 4%;
+
+                &:first-child {
+                    width: 190px;
+                }
+
+                &:nth-child(2) {
+                    width: 130px;
+                }
+
+                &:nth-child(3) {
+                    width: 110px;
+                }
+            }
+
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}

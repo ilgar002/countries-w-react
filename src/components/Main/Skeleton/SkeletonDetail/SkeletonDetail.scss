@@ -1,0 +1,72 @@
+@import '../../../../sassStyles/variables';
+
+.skeleton-details {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+
+    .img-container {
+        width: 500px;
+        height: 350px;
+        background-color: #747c83;
+        border-radius: 6px;
+
+    }
+
+    .m-line {
+        width: 200px;
+        height: 45px;
+        background-color: #747c83;
+        border-radius: 6px;
+    }
+
+    .s-line {
+        width: 225px;
+        height: 22px;
+        border-radius: 6px;
+        background-color: #747c83;
+    }
+
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+
+        .row {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+
+        .borders {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+}
+
+
+@media(max-width:1300px) {
+    .skeleton-details {
+        justify-content: center;
+    }
+}
+
+@media(max-width:600px) {
+    .skeleton-details {
+        .img-container {
+            width: 100%;
+            height: 250px;
+        }
+    }
+}
